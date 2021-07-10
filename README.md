@@ -1,7 +1,7 @@
 # CAB302 Prjoect 20 / 50 
 
-#Requirements (5%)
-#Marks	Total	Criterion
+##Requirements (5%)
+##Marks	Total	Criterion
 #3	3	Client requirements are comprehensively covered
 #0	2	Client requirements are accurately prioritised (e.g. must have, should have, nice to have)
 #Marker feedback: Missing priorities for each requirement.
