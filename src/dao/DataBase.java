@@ -34,7 +34,7 @@ public class DataBase {
         }
         return conn;
     }
-    /*
+
     public static void close(PreparedStatement stmt, Connection conn) {
         if (stmt != null) {
             try {
@@ -95,5 +95,5 @@ public class DataBase {
 
     public static void main(String[] args) {
         getConnection();
-    }*/
+    }
 }

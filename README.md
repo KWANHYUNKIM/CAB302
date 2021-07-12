@@ -79,6 +79,8 @@
 #10 / 7 </br>
 #connect github and commit and push my code. </br>
  
+#12 / 7 </br> 
+#testing - multi thread 
 
 
 
