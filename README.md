@@ -81,7 +81,8 @@
  
 #12 / 7 </br> 
 #testing - multi thread 
-
+#JavaFx - Pie chart
+#But did not working, Check Tomorrow. 
 
 
 
