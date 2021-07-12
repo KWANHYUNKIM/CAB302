@@ -23,5 +23,16 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib/annotations-20.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="openjfx-11.0" level="project" />
+    <orderEntry type="library" name="javafx11" level="application" />
   </component>
 </module>
