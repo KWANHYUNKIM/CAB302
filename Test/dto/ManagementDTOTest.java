@@ -1,52 +1,24 @@
 package dto;
 
 import org.junit.Test;
+import org.mockito.Mockito;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.when;
 
 public class ManagementDTOTest {
 
     @Test
-    public void getId() {
+    public static void Instance() throws Exception{
+         ManagementDTO mdto = Mockito.mock(ManagementDTO.class);
+         when(mdto.getId()).thenReturn("ID");
+         when(mdto.getPassword()).thenReturn("PASSWORD");
+         when(mdto.getName()).thenReturn("DEPARTMENT");
+
+         assertTrue("ID".equals(mdto.getId()));
+         assertTrue("PASSWORD".equals(mdto.getPassword()));
+         assertTrue("DEPARTMENT".equals(mdto.getDepartment()));
+
     }
 
-    @Test
-    public void setId() {
-    }
-
-    @Test
-    public void getPassword() {
-    }
-
-    @Test
-    public void setPassword() {
-    }
-
-    @Test
-    public void getFakePassword() {
-    }
-
-    @Test
-    public void setFakePassword() {
-    }
-
-    @Test
-    public void getName() {
-    }
-
-    @Test
-    public void setName() {
-    }
-
-    @Test
-    public void getDepartment() {
-    }
-
-    @Test
-    public void setDepartment() {
-    }
-
-    @Test
-    public void testToString() {
-    }
 }

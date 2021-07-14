@@ -1,28 +1,16 @@
 package dto;
 
 import org.junit.Test;
+import org.mockito.Mockito;
 
-import static org.junit.Assert.*;
-
+import static org.junit.Assert.assertTrue;
 public class CreditDTOTest {
 
-    @Test
-    public void getDepartment() {
-    }
+@Test
+public void CreditMock(){
+    CreditDTOTest credit = Mockito.mock(CreditDTOTest.class);
+    assertTrue(credit != null);
 
-    @Test
-    public void setDepartment() {
-    }
-
-    @Test
-    public void getCredit() {
-    }
-
-    @Test
-    public void setCredit() {
-    }
-
-    @Test
-    public void testToString() {
-    }
 }
+}
+
