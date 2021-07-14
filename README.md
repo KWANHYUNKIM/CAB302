@@ -80,9 +80,17 @@
 #connect github and commit and push my code. </br>
  
 #12 / 7 </br> 
-#testing - multi thread 
-#JavaFx - Pie chart
-#But did not working, Check Tomorrow. 
+#testing - multi thread </br> 
+#JavaFx - Pie chart </br>
+#But did not working, Check Tomorrow </br> 
+
+#Intermediate Modification </br>
+#Individual source control is done </br>
+#Integration session is done (CI part) </br>
+
+#Processing 
+#Unit-Testing 
+#JavaFx(Pie char)
 
 
 
