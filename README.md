@@ -84,6 +84,7 @@
 #JavaFx - Pie chart </br>
 #But did not working, Check Tomorrow </br> 
 
+#14 / 7 </br>
 #Intermediate Modification </br>
 #Individual source control is done </br>
 #Integration session is done (CI part) </br>
@@ -92,6 +93,9 @@
 #Unit-Testing 
 #JavaFx(Pie char)
 
+#15 / 7 </br>
+#half of Unit-Testing is done (DTO is done)
+#
 
 
 
