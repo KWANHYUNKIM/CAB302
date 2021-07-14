@@ -1,44 +1,26 @@
 package dto;
 
+import org.junit.Assert;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.when;
 
 public class TradeDTOTest {
 
     @Test
-    public void getDepartment() {
-    }
+    public void Instance() throws Exception{
+        TradeDTO tdto = Mockito.mock(TradeDTO.class);
+        when(tdto.getAsset()).thenReturn(1);
+        when(tdto.getDepartment()).thenReturn("DEPARTMENT");
+        when(tdto.getQuantity()).thenReturn(1);
+        when(tdto.getType()).thenReturn("TYPE");
 
-    @Test
-    public void setDepartment() {
-    }
+        Assert.assertEquals(1,tdto.getAsset());
+        assertTrue("DEPARTMENT".equals(tdto.getDepartment()));
+        Assert.assertEquals(1,tdto.getQuantity());
+        assertTrue("TYPE".equals(tdto.getType()));
 
-    @Test
-    public void getAsset() {
-    }
-
-    @Test
-    public void setAsset() {
-    }
-
-    @Test
-    public void getQuantity() {
-    }
-
-    @Test
-    public void setQuantity() {
-    }
-
-    @Test
-    public void getType() {
-    }
-
-    @Test
-    public void setType() {
-    }
-
-    @Test
-    public void testToString() {
     }
 }

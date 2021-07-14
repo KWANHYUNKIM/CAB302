@@ -9,7 +9,7 @@ import static org.mockito.Mockito.when;
 public class ManagementDTOTest {
 
     @Test
-    public static void Instance() throws Exception{
+    public void Instance() throws Exception{
          ManagementDTO mdto = Mockito.mock(ManagementDTO.class);
          when(mdto.getId()).thenReturn("ID");
          when(mdto.getPassword()).thenReturn("PASSWORD");
