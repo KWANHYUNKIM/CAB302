@@ -1,13 +1,10 @@
 package gui.DevelopmentTeam.Frame;
 
-import java.awt.BorderLayout;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
-
-import javax.swing.JFrame;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
 
 
 public class ClientFrame extends JFrame implements ActionListener{
@@ -38,6 +35,10 @@ public class ClientFrame extends JFrame implements ActionListener{
         client.connect();
     }
 
+    /**
+     * It functions as sending and receiving message.
+     *
+     * */
     @Override
     public void actionPerformed(ActionEvent e) {
         String message = jtf.getText() + "\n";

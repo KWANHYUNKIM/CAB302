@@ -14,7 +14,8 @@ public class DataBase {
     public static Connection getConnection() {
 
         Connection conn = null;
-
+        // Connection between server and computer
+        // If the ID and Password are changed, an error occurs.
         try {
             String id = "root";
             String pw = "0428";

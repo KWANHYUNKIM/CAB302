@@ -20,7 +20,8 @@ public class CreditDAO {
     private PreparedStatement stmt = null;
     private ResultSet rs = null;
 
-
+    // String INSERT : Put the value in the database.
+    // String LIST : Retrives the value of the database.
     private final String INSERT = "INSERT INTO management.credit(dep,credit) "
             + "values(?,?)";
     private final String LIST = "select * from management.credit";
@@ -39,7 +40,7 @@ public class CreditDAO {
     public int insertCredit(CreditDTO cdto) {
 
         conn = DataBase.getConnection();
-
+        // All values are transferred over the function of InsertCredit to the database.
         try {
             stmt = conn.prepareStatement(INSERT);
 
@@ -62,7 +63,7 @@ public class CreditDAO {
     public List<CreditDTO> creditList() {
         conn = DataBase.getConnection();
         List<CreditDTO> list = new ArrayList<CreditDTO>();
-
+        // Value of the database are stored in the list function and shown to the user.
         try {
             stmt = conn.prepareStatement(LIST);
             rs = stmt.executeQuery();

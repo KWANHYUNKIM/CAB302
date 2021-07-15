@@ -102,7 +102,8 @@ public class LoginFrame extends JFrame {
 
 
                 String result = mdao.idPassword(id, password);
-                // If admin login, return 1
+                // If result is true , automatically login in and then
+                // it is identified by result which is admin , DevelopmentTeam and SoftwareTeam.
 
 
                 if (result == "admin") {

@@ -4,7 +4,19 @@
    <modelVersion>4.0.0</modelVersion>
 
     <artifactId>CAB302</artifactId>
-    <groupId>kwanhyun</groupId>
+ <build>
+  <plugins>
+   <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <configuration>
+     <source>6</source>
+     <target>6</target>
+    </configuration>
+   </plugin>
+  </plugins>
+ </build>
+ <groupId>kwanhyun</groupId>
     <version>1.2.2</version>
 
 <dependencies>

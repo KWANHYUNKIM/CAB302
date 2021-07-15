@@ -23,6 +23,9 @@ public class ManagementDAO {
     private PreparedStatement stmt = null;
     private ResultSet rs = null;
 
+    // String INSERT : Put the value in the database.
+    // String LIST : Retrives the value of the database.
+
     private final String LOGIN = "select department from management.user where id = ? and password = ?";
     private final String INSERT = "INSERT INTO management.user(id,password,fakepassword,name,department) "
             + "values(?,?,?,?,?)";
@@ -52,7 +55,8 @@ public class ManagementDAO {
             stmt.setString(2, password);
 
             rs = stmt.executeQuery();
-
+            // The process of determining the users are identified by the department without adminstration.
+            // admin's department is 1234.
             if(rs.next()) {
 
                 if (rs.getString("department").equals("1234"))
@@ -78,6 +82,8 @@ public class ManagementDAO {
      */
     public int insertMember(ManagementDTO mdto) {
         conn = DataBase.getConnection();
+        // The exact number of tables created in the database must be matched.
+        // If not , error will be occurred.
         try {
             stmt = conn.prepareStatement(INSERT);
             stmt.setString(1, mdto.getId());
