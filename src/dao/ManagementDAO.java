@@ -1,14 +1,13 @@
 package dao;
 
+import dto.ManagementDTO;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 import java.util.ArrayList;
 import java.util.List;
-
-import dto.ManagementDTO;
 
 /**
  * Management DAO
@@ -64,9 +63,7 @@ public class ManagementDAO {
 
                 else
                     return "SoftwareTeam";
-
             }
-
 
         } catch(SQLException e) {
             e.printStackTrace();
@@ -74,16 +71,13 @@ public class ManagementDAO {
 
         return "-1";
     }
-
     /**
      * insertMember
      * It receives the values provided by the user
      * and stores them in the database.
      */
     public int insertMember(ManagementDTO mdto) {
-
         conn = DataBase.getConnection();
-
         try {
             stmt = conn.prepareStatement(INSERT);
             stmt.setString(1, mdto.getId());
@@ -100,7 +94,6 @@ public class ManagementDAO {
         }
         return -1;
     }
-
     /**
      * managementList
      * It is a list of values stored in a database.

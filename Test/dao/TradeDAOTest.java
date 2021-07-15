@@ -1,36 +1,34 @@
 package dao;
 
-import dto.TradeDTO;
+import dto.TradeDTOTest;
+import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 
 public class TradeDAOTest
 {
-    @InjectMocks private TradeDAO tdao;
+    @InjectMocks private TradeDTOTest tdtot;
     @InjectMocks Connection conn = null;
     @InjectMocks private PreparedStatement stmt = null;
-    @InjectMocks private ResultSet rs = null;
     @InjectMocks private final String INSERT = "INSERT INTO management.trade(dep,asset,quantity,type) "
             + "values(?,?,?,?)";
 
-    public int insertTrade(TradeDTO cdto) {
+    public int insertTrade() {
 
         conn = DataBase.getConnection();
 
         try {
             stmt = conn.prepareStatement(INSERT);
 
-            stmt.setString(1, cdto.getDepartment());
-            stmt.setString(2, String.valueOf(cdto.getAsset()));
-            stmt.setString(3, String.valueOf(cdto.getQuantity()));
-            stmt.setString(4, cdto.getType());
+            stmt.setString(1, tdtot.getDepartment());
+            stmt.setString(2, tdtot.getAsset());
+            stmt.setString(3, tdtot.getQuantity());
+            stmt.setString(4, tdtot.getType());
             stmt.executeUpdate();
             return 1;
-
         } catch(Exception e) {
             e.printStackTrace();
         }
@@ -40,7 +38,7 @@ public class TradeDAOTest
     @Test
     public void Test()
     {
-
+        Assert.assertEquals(1,insertTrade());
     }
 
 }
