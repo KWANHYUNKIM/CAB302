@@ -13,28 +13,26 @@ public class ManagementDTOTest {
 
     }
     @Test
-    public String getId() throws Exception {
+    public void getId() throws Exception {
         when(mdto.getId()).thenReturn("ID");
         assertTrue("ID".equals(mdto.getId()));
-        return getId();
+
     }
     @Test
-    public String getPassword() throws Exception {
+    public void getPassword() throws Exception {
         when(mdto.getPassword()).thenReturn("PASSWORD");
         assertTrue("PASSWORD".equals(mdto.getPassword()));
-        return getPassword();
+
     }
     @Test
-    public String getName() throws Exception {
+    public void getName() throws Exception {
          when(mdto.getName()).thenReturn("NAME");
          assertTrue("NAME".equals(mdto.getName()));
-         return getName();
     }
     @Test
-    public String getDepartment() throws Exception{
-        when(mdto.getName()).thenReturn("DEPARTMENT");
+    public void getDepartment() throws Exception{
+        when(mdto.getDepartment()).thenReturn("DEPARTMENT");
         assertTrue("DEPARTMENT".equals(mdto.getDepartment()));
-        return getName();
     }
 
 }

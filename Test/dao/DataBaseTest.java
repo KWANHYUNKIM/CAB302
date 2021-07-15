@@ -21,7 +21,7 @@ public class DataBaseTest {
     }
 
     @Test
-    public void testMockDBConnection() throws Exception {
+    public void TestDatabase() throws Exception {
         Mockito.when(mockConnection.createStatement()).thenReturn(mockStatement);
         Mockito.when(mockConnection.createStatement().executeUpdate((String) Mockito.any())).thenReturn(1);
         Connection value = db.getConnection();

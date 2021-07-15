@@ -13,14 +13,14 @@ public class CreditDTOTest {
 
         when(cdto.getCredit()).thenReturn(1);
         Assert.assertEquals(1,cdto.getCredit());
-        return getCredit();
+        return cdto.getCredit();
 
     }
     @Test
     public String getDepartment() throws Exception{
         when(cdto.getDepartment()).thenReturn("DEPARTMENT");
         Assert.assertEquals("DEPARTMENT",cdto.getDepartment());
-        return getDepartment();
+        return cdto.getDepartment();
     }
 }
 

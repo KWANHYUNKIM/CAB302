@@ -1,14 +1,12 @@
 package dao;
 
+import dto.CreditDTO;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
-
 import java.util.ArrayList;
 import java.util.List;
-
-import dto.CreditDTO;
 
 public class CreditDAO {
     /**
@@ -26,7 +24,6 @@ public class CreditDAO {
     private final String INSERT = "INSERT INTO management.credit(dep,credit) "
             + "values(?,?)";
     private final String LIST = "select * from management.credit";
-
 
     private CreditDAO() {}
     private static CreditDAO instance = new CreditDAO();
