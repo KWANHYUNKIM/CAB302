@@ -27,6 +27,7 @@ public class UserManagementFrame extends JFrame {
 
 
     public UserManagementFrame() {
+
         super("List");
         super.setResizable(true);
         setSize(1300, 800);
@@ -50,6 +51,7 @@ public class UserManagementFrame extends JFrame {
 
         tModel = new DefaultTableModel(member, 0);
 
+        // The value of the database is taken and outputted.
         for (int i = 0; i < list.size(); i++) {
 
             String id = list.get(i).getId();

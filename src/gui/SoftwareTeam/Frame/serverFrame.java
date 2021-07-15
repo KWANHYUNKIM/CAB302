@@ -1,13 +1,10 @@
 package gui.SoftwareTeam.Frame;
 
-import java.awt.BorderLayout;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
-
-import javax.swing.JFrame;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
 
 
 
@@ -35,6 +32,7 @@ public class serverFrame extends JFrame implements ActionListener{
         server.setGui(this);
         server.setting();
     }
+
     public static void main(String[] args) {
         new serverFrame();
     }

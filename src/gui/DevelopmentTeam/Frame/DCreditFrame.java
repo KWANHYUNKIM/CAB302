@@ -41,7 +41,7 @@ public class DCreditFrame extends JFrame {
         rPanel = new JPanel();
         rPanel.setLayout(new BorderLayout());
         setContentPane(rPanel);
-
+        //Label with Trade
         rLabel = new JLabel("Trade");
         rLabel.setFont(new Font("Serif", Font.BOLD, 40));
         rLabel.setHorizontalAlignment(SwingConstants.CENTER);
@@ -50,33 +50,34 @@ public class DCreditFrame extends JFrame {
         JPanel main = new JPanel(new GridLayout(7, 2, 10, 10));
 
         ButtonGroup bg = new ButtonGroup();
-
+        // Button with Sell
         rsell= new JRadioButton("Sell");
         rsell.setHorizontalAlignment(SwingConstants.CENTER);
         bg.add(rsell);
 
         main.add(rsell);
+        // Button with Buy.
         rbuy = new JRadioButton("Buy");
         rbuy.setHorizontalAlignment(SwingConstants.CENTER);
         bg.add(rbuy);
         main.add(rbuy);
 
         rPanel.add(main, BorderLayout.CENTER);
-
+        // Label with Value
         rasset = new JLabel("Value");
         rasset.setHorizontalAlignment(SwingConstants.CENTER);
         main.add(rasset);
 
         tasset = new JTextField();
         main.add(tasset);
-
+        // Label with Quantity
         rquantity = new JLabel("Quantity");
         rquantity.setHorizontalAlignment(SwingConstants.CENTER);
         main.add(rquantity);
 
         tquantity = new JTextField();
         main.add(tquantity);
-
+        // Button with Register
         rButton = new JButton("Register");
         rButton.setFont(new Font("Serif", Font.BOLD, 20));
         rPanel.add(rButton, BorderLayout.SOUTH);
@@ -85,7 +86,11 @@ public class DCreditFrame extends JFrame {
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-
+        /**
+         * It stores the values assigned to the users in the database.
+         * If the result is zero, an error occurs and the data is not stored.
+         * And without Balance, the value is not stored.
+         */
         rButton.addActionListener(new ActionListener() {
 
             @Override

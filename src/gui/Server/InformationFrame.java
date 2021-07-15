@@ -1,24 +1,17 @@
 package gui.Server;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.EventQueue;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import java.util.List;
-
-
-import javax.swing.*;
-import javax.swing.border.EmptyBorder;
-import javax.swing.table.DefaultTableModel;
-
-
 import dao.CreditDAO;
 import dao.TradeDAO;
 import dto.CreditDTO;
 import dto.TradeDTO;
+
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import javax.swing.table.DefaultTableModel;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.List;
 
 /**
  * InformationFrame
@@ -43,7 +36,8 @@ public class InformationFrame extends JFrame {
         panel = new JPanel(new BorderLayout());
         panel.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(panel);
-
+        // Customer can see Credit Situation.
+        // It is included in Department, ASSET, QUANTITY and TYPE.
         lilabel = new JLabel("Credit Situation");
         lilabel.setFont(new Font("Serif", Font.BOLD, 50));
         lilabel.setHorizontalAlignment(SwingConstants.CENTER);
@@ -58,7 +52,7 @@ public class InformationFrame extends JFrame {
         String[] member = {"Department","ASSET","QUANTITY","TYPE"};
 
         tModel = new DefaultTableModel(member, 0);
-
+        // Displays values that are assigned to the database.
         for (int i = 0; i <tradeList.size(); i++)
         {
             String department = tradeList.get(i).getDepartment();

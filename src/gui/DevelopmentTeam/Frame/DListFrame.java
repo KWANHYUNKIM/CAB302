@@ -3,11 +3,10 @@ package gui.DevelopmentTeam.Frame;
 
 import gui.Server.InformationFrame;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.*;
 
 /**
  * DListFrame
@@ -35,7 +34,7 @@ public class DListFrame extends JFrame implements ActionListener{
                 super.paint(g);
             }
         };
-
+        // Main Frame with StockSituation, BuyAndSell and Chatting.
         stockSituation = new JButton("stockSituation");
         BuyAndSell = new JButton("BuyAndSell");
         chatting = new JButton("chatting");
@@ -55,11 +54,14 @@ public class DListFrame extends JFrame implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent a) {
+        //If click the stockSituation, page is changed to InformationFrame.
         try {
             if (a.getSource() == stockSituation) {
                 new InformationFrame();
+                // The same as above
             } else if (a.getSource() == BuyAndSell) {
                 new DCreditFrame();
+                // The same as above
             } else if (a.getSource() == chatting) {
                 new ClientFrame();
             }
