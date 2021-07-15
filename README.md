@@ -106,3 +106,30 @@
 #Individual demonstrates is clear.</br>
 #Integration part (half part).</br>
 
+# Refixing
+
+#Integration (5%)</br>
+#Marks Total Criterion </br>
+#Build scripts that build the software and run unit tests are demonstrated </br>
+#Marker feedback: Build script does not do packaging, run unit tests or anything else. </br>
+#A continuous integration pipeline that builds the software and runs unit tests is demonstrated. </br>
+#Marker feedback: CI not demonstrated in video. </br>
+
+#Individual demonstrates that they have plenty of commits in the project Git log.<br/>
+#Marker feedback: Git commits not shown in video.<br/>
+#Individual demonstrates that they have written useful commit messages.<br/>
+#Marker feedback: Git commits not shown in video.<br/>
+
+#Individual demonstrates that they contributed a fair portion of the work on developing unit tests.<br/>
+
+#Unit Testing (10%)<br/>
+#Marks	Total	Criterion<br/>
+#Black box unit tests are present and cover normal cases and boundary cases<br/>
+#Marker feedback: Unit tests do not actually 'test' anything - they are devoid of JUnit assertions and catch any exceptions, meaning they will never fail<br/>
+#Black box unit tests are present and cover exceptional cases<br/>
+#Marker feedback: As above<br/>
+#Glass box unit tests are present and achieve total code coverage over the code that can be reasonably unit tested<br/>
+#Marker feedback: As above<br/>
+#Mock objects are used to replace real resources (e.g. database, network connection) for the purposes of unit testing<br/>
+#Marker feedback: Could not see any evidence of mocks being used.<br/>
+
