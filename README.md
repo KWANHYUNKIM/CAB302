@@ -95,8 +95,14 @@
 
 #15 / 7 </br>
 #half of Unit-Testing is done (DTO is done)
-#
 
+#15 / 7 - Afternoon </br> 
+#Unit-Test is done.
+#Trying an ANT building. 
 
+# Interim Check (which part is done)
 
+#Individual source control is done. 
+#Individual demonstrates is clear.
+#Integration part (half part)
 
