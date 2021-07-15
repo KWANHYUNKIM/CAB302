@@ -102,7 +102,7 @@
 
 # Interim Check (which part is done)
 
-#Individual source control is done. 
-#Individual demonstrates is clear.
-#Integration part (half part)
+#Individual source control is done.</br> 
+#Individual demonstrates is clear.</br>
+#Integration part (half part).</br>
 
